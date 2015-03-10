@@ -7,18 +7,6 @@ public class MusicRunner
     int count = 0;
     MusicReader mr = new MusicReader();
     
-    ArrayList<Songs> list = new ArrayList<Songs>();
-    list.add(Song1);
-    list.add(Song2);
-    list.add(Song3);
-    list.add(Song4);
-    list.add(Song5);
-    list.add(Song6);
-    list.add(Song7);
-    list.add(Song8);
-    list.add(Song9);
-    list.add(Song10);
-    
     mr.open("musiclist.csv");
     
     String[] data = mr.getSongData();
@@ -56,3 +44,15 @@ public class MusicRunner
     mr.close();
   }
 }
+
+//public class ArrayListSongs
+//{
+//  public static void main(String args[])
+//  {
+//    ArrayList Songs = new Array();
+//    
+//    Songs.add("1");
+//    Songs.add("2");
+//    Songs.add("3");
+//  }
+//}
